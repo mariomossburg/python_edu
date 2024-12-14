@@ -168,29 +168,91 @@ arr = [1,3,5,2,8]
 # def max_product(x: list)-> int:
 #     arr.sort()
 #     return arr[-1] * arr[-2]
-
-
 # print(max_product(arr))
 
-def func(x: list)-> int:
+
+
+# def func(x: list)-> int:
     # max1 = float('-inf')
-    # max2 = float('-inf')
-    max1 = 0
-    max2 = 0
-
-    for num in x:
-        if num > max1:
-            max2 = max1
-            max1 = num
-        elif num > max2:
-            max2 = num
+    # max2 = float('-inf') 
+#     max1 = 0
+#     max2 = 0
+#     for num in x:
+#         if num > max1:
+#             max2 = max1
+#             max1 = num
+#         elif num > max2:
+#             max2 = num
     
-    return max1 * max2
+#     return max1 * max2
 
-print(func(arr))
-
-
+# print(func(arr))
 
 
-# got it. once I finish this question, let's focus on looping questions using while 
-# loops. or, questions involving more boolean values. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1. Unique Elements (Set Problem)
+# Write a function that takes a list of integers and returns a new list containing only the unique elements from the input list.
+
+# Example
+# Input: [1, 2, 2, 3, 4, 4, 5]
+# Output: [1, 2, 3, 4, 5]
+
+lst = [1, 2, 2, 3, 4, 4, 5]
+st = set()
+
+
+for i in lst:
+    st.add(i)
+    
+print(st)
+
+
+
+# 2. Word Frequency Counter (Dictionary Problem)
+# Write a function that takes a list of words and returns a dictionary where the keys are words, and the values are the number of times each word appears in the list.
+
+# Example
+# Input: ["apple", "banana", "apple", "kiwi", "banana", "apple"]
+# Output: {"apple": 3, "banana": 2, "kiwi": 1}
+
+
+frts = ["apple", "banana", "apple", "kiwi", "banana", "apple"]
+
+aMap = {}
+
+for i in frts:
+    if i not in aMap:
+        aMap[i] = 1
+    elif i in frts:
+        aMap[i] += 1
+
+
+print(aMap)
+
+a = [1,2,3,4,5]
+a[-1]
+
+
+
+# 3. Intersection of Two Lists (Set Problem)
+# Write a function that takes two lists of integers and returns a new list containing only the elements that are common to both lists.
+
+# Example
+# Input: list1 = [1, 2, 3, 4], list2 = [3, 4, 5, 6]
+# Output: [3, 4]
+
+
+
