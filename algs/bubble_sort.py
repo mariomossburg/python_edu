@@ -18,7 +18,7 @@ print(bubble_sort(arr_unordered))
 # big O notation of O(n)
 def bubble(arr: list)-> list:
     index_length = len(arr) - 1
-    sorted = False
+    sorted = False # i'm called a flag
 
     while not sorted:
         sorted = True
@@ -30,6 +30,28 @@ def bubble(arr: list)-> list:
     return arr
 
 print((bubble(arr_unordered)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
