@@ -1,12 +1,67 @@
 
+# arr = [1,2,4,5,6]
+
+# def func(arr:list)-> list:
+#     missing_number = 0
+
+#     for i in range(len(arr) -1):
+#         if arr[i+ 1] - arr[i] != 1:
+#             missing_number = arr[i] + 1
 
 
+#     return missing_number
+
+# print(func(arr))
 
 
+# nums = [1, 2, 3, 4, 5, 6, 7]
+# k = 3
+
+# def func(arr:list, x: int)-> list:
+#     k = k % len(arr)
+
+#     return arr[-k:] + arr[:-k]
+
+# print(func(nums, k))
 
 
+array = [1, 10, 3, 4, 7]
+
+def func(arr:list)-> int:
+    num1= -float('inf') # initializing to smallest possible value
+    num2= -float('inf')
+
+    for i in arr:
+        if i > num1:
+            num2 = num1
+            num1 = i
+        elif i > num2:
+                num2 = i
 
 
+    return num1 * num2
+
+
+print(func(array))
+
+
+# find the two numbers whose product is the smallest.
+
+arraz = [1, 10, 3, 4, -2]
+
+def smallz(arr:list)-> int:
+     num1 = -float('inf')
+     num2 = float('inf')
+
+     for i in arr:
+          if i > num1:
+               num1= i
+          elif i < num2:
+               num2 = i
+          
+     return num1*num2
+
+print(smallz(arraz))
 
 
 

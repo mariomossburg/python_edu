@@ -2,7 +2,9 @@
 # --  Equal ==
 # --  not equal !=
 # --  >, <, >=, <= 
-
+# --  // -> floor division: divides two numbers and rounds down to a whole number
+# --  is and is not
+# -- None ->  means the value is undefined. is a default placeholder
 
 # -----------Logical Operators----------------
 # --  and -- both must be true

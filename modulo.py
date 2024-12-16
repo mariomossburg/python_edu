@@ -17,6 +17,10 @@ print(8%10)
 arr = [1, 2, 3, 4, 5, 6, 7]
 k = 3
 
+
+
+# we normalize, because using modulo reduces the size of k to be within the
+# bounds of the length of the array, and avoids exessive rotations.  
 def rotate_array(arr, k):
     # Normalize k: 
     # We reduce k to be within the bounds of the array length. 
