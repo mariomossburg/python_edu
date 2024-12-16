@@ -1,13 +1,11 @@
-# cast the integer to a string, where it can then be 
-# manipulated since a string is a data structure
-s = str(456)
-print(s[::-1])
+# sequence[start:stop:step]
+
+for i in range(0,100, 5):
+    print(i)
 
 
 
-a = 456
-# str(a) this line will not work 
-# since it has no assignment it is merely 
-# a function that doesn't sign a result to a
-a = str(a)
-print(a[::-1])
+# modulo
+# in layman’s terms it finds the remainder or signed 
+# remainder after the division of one number by another.
+# print(3%7)
