@@ -1,3 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # arr = [1, 2, 2, 3, 4, 4, 5]
 # hashset = set()
 
@@ -32,20 +67,19 @@
 
 
 
-array = [0,1,0,3,12]
+# array = [0,1,0,3,12]
 
 
-def move_to_end(arr:list)->list:
-    non_zero_index = 0
+# def move_to_end(arr:list)->list:
+#     non_zero_index = 0
 
-    for i in range(len(arr)):
-        if arr[i] != 0:
-            arr[non_zero_index], arr[i] = arr[i], arr[non_zero_index]
-            non_zero_index += 1
-    return arr
+#     for i in range(len(arr)):
+#         if arr[i] != 0:
+#             arr[non_zero_index], arr[i] = arr[i], arr[non_zero_index]
+#             non_zero_index += 1
+#     return arr
 
 
-0,1,0,3,12
 
-0
-1
+
+
