@@ -48,3 +48,7 @@ def find_unique(nums):
     for num in nums:
         result ^= num
     return result
+
+
+x = 10
+print(x.__sizeof__())

@@ -25,67 +25,43 @@
 # print(func(nums, k))
 
 
-array = [1, 10, 3, 4, 7]
+# array = [1, 10, 3, 4, 7]
 
-def func(arr:list)-> int:
-    num1= -float('inf') # initializing to smallest possible value
-    num2= -float('inf')
+# def func(arr:list)-> int:
+#     num1= -float('inf') # initializing to smallest possible value
+#     num2= -float('inf')
 
-    for i in arr:
-        if i > num1:
-            num2 = num1
-            num1 = i
-        elif i > num2:
-                num2 = i
-
-
-    return num1 * num2
+#     for i in arr:
+#         if i > num1:
+#             num2 = num1
+#             num1 = i
+#         elif i > num2:
+#                 num2 = i
 
 
-print(func(array))
+#     return num1 * num2
 
 
-# find the two numbers whose product is the smallest.
+# print(func(array))
 
-arraz = [1, 10, 3, 4, -2]
 
-def smallz(arr:list)-> int:
-     num1 = -float('inf')
-     num2 = float('inf')
+# # find the two numbers whose product is the smallest.
 
-     for i in arr:
-          if i > num1:
-               num1= i
-          elif i < num2:
-               num2 = i
+# arraz = [1, 10, 3, 4, -2]
+
+# def smallz(arr:list)-> int:
+#      num1 = -float('inf')
+#      num2 = float('inf')
+
+#      for i in arr:
+#           if i > num1:
+#                num1= i
+#           elif i < num2:
+#                num2 = i
           
-     return num1*num2
+#      return num1*num2
 
-print(smallz(arraz))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print(smallz(arraz))
 
 
 # arr = [1, 2, 2, 3, 4, 4, 5]
@@ -135,6 +111,147 @@ print(smallz(arraz))
 #     return arr
 
 
+# arr = [1, 2, 4, 6]
+
+# def func(arr:list)-> list:
+#      missing_nums = []
+#      for i in range(len(arr) -1):
+#           if arr[i + 1] - arr[i] != 1:
+#                missing_nums.append(arr[i] + 1)
+#      return missing_nums
+
+# print(func(arr))
+
+
+# nums = [1,2,3,4,5]
+# k = 2
+
+# def rotate_array(arr:list, k: int)->list:
+    
+#     k = k % len(arr)
+
+#     return arr[-k:] + arr[:-k]
+
+# print(rotate_array(nums, k))
+
+
+# nums = [1,2,3,4,5]
+
+# def func(arr:list)-> int:
+#     low = int('-inf')
+#     high = int('-inf')
+    
+#     return low * high
+
+# nums = [1,2,3,4,5,1]
+# def func(arr:list)->bool:
+
+#     return len(arr) == len(set(arr))
+
+# print(func(nums))
 
 
 
+
+
+# nums = [44,87,109,1,65,3,8,22,97,25,36,54]
+
+# def func(arr:list)->list:
+#     n = len(arr) - 1
+#     sorted = False 
+
+#     while not sorted:
+#         sorted = True
+#         for i in range(n):
+#             if arr[i] > arr[i+1]:
+#                 sorted = False
+#                 arr[i],  arr[i+1] = arr[i+1], arr[i]
+#     return arr
+
+# print(nums)
+# print(func(nums))
+
+# def func(word: str)->str:
+
+#     for i in range(len(word) -1):
+#         if word[i] != word[i+1]:
+#             return word[i]
+#         else:
+#             return None 
+
+# print(func(x))
+# print(func(y))
+
+
+# x = 'leetcode'
+# y = 'aabb'
+
+# def func(x:str)-> str:
+
+#     num_map = {}
+
+# # for key, value in num_map.items():
+#     for i, n in enumerate(x):
+#         if n not in num_map:
+#             num_map[n] = 1
+#         elif n in num_map:
+#             num_map[n] += 1
+
+#     print(num_map)
+
+#     # for i, n in enumerate(num_map):
+#     #     if num_map[n] == 1:
+#     #         return num_map[n]
+#     # return None
+#     for i in x:
+#         if num_map[i] == 1:
+#             return i
+
+
+
+# print(func(x))
+
+
+
+
+
+
+
+
+
+
+# Find the first infrequent number in a string
+
+# x = 'leetcode'
+# output = 'l'
+# y ='aabb'
+
+
+# def func(x:str)-> str:
+#     prev_map = {}
+
+#     for i, n in enumerate(x):
+#         if n not in prev_map:
+#             prev_map[n] = 1
+#         elif n in prev_map:
+#             prev_map[n] +=1
+
+#     print(prev_map)
+
+#     for i in x:
+#         if prev_map[i] == 1:
+#             return i
+#         else:
+#             return None
+
+# print(func(y))
+
+hashmap = {"a": 1, "b": 2,"c": 3,"d": 4,"e": 5 }
+
+# for key, value  in enumerate(hashmap):
+#     print(hashmap.get(i, n))
+
+
+for key in hashmap.keys():
+    value = hashmap[key]
+    print(key, value)
