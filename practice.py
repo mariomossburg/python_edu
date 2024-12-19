@@ -246,12 +246,85 @@
 
 # print(func(y))
 
-hashmap = {"a": 1, "b": 2,"c": 3,"d": 4,"e": 5 }
+# names_and_foods = [
+#     "Alice, Pizza",
+#     "Bob, Sushi",
+#     "Alice, Sushi",
+#     "Charlie, Pizza",
+#     "Bob, Pasta"
+# ]
 
-# for key, value  in enumerate(hashmap):
-#     print(hashmap.get(i, n))
+# print()
+# hashmap = {}
+
+# for i in names_and_foods:
+#     x, y = i.split(', ')
+#     if y not in hashmap:
+
+#         hashmap[y] = [x]
+#     else:
+#         hashmap[y].append(x)
 
 
-for key in hashmap.keys():
-    value = hashmap[key]
-    print(key, value)
+
+# print(hashmap)
+
+
+
+
+
+
+
+
+
+
+# names_and_foods = [
+#     "Alice, Pizza",
+#     "Bob, Sushi",
+#     "Alice, Sushi",
+#     "Charlie, Pizza",
+#     "Bob, Pasta"
+# ]
+
+
+
+# def func(arr:list)->dict:
+#     hmap = {}
+
+#     for i in names_and_foods:
+#         name, food = i.split(', ')
+#         if food not in hmap:
+#             hmap[food] = [name]
+#         elif food in hmap:
+#             hmap[food].append(name)
+
+
+#     return hmap
+
+# print(func(names_and_foods))
+    
+
+names_and_foods = [
+    "Alice, Pizza",
+    "Bob, Sushi",
+    "Alice, Sushi",
+    "Charlie, Pizza",
+    "Bob, Pasta"
+]
+
+def func(arr:list)->dict:
+    hmap = {}
+
+    for i in arr:
+        name, food = i.split(', ')
+        # print(name,food)
+        if food not in hmap:
+            hmap[food] = [name]
+        elif food in hmap:
+            hmap[food].append(name)
+
+    return hmap
+
+sii = func(names_and_foods)
+print(sii)
+print(func(names_and_foods))
