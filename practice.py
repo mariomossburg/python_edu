@@ -304,6 +304,33 @@
 # print(func(names_and_foods))
     
 
+# names_and_foods = [
+#     "Alice, Pizza",
+#     "Bob, Sushi",
+#     "Alice, Sushi",
+#     "Charlie, Pizza",
+#     "Bob, Pasta"
+# ]
+
+# def func(arr:list)->dict:
+#     hmap = {}
+
+#     for i in arr:
+#         name, food = i.split(', ')
+#         # print(name,food)
+#         if food not in hmap:
+#             hmap[food] = [name]
+#         elif food in hmap:
+#             hmap[food].append(name)
+
+#     return hmap
+
+# sii = func(names_and_foods)
+# print(sii)
+
+
+
+
 names_and_foods = [
     "Alice, Pizza",
     "Bob, Sushi",
@@ -312,19 +339,97 @@ names_and_foods = [
     "Bob, Pasta"
 ]
 
-def func(arr:list)->dict:
-    hmap = {}
 
-    for i in arr:
-        name, food = i.split(', ')
-        # print(name,food)
-        if food not in hmap:
-            hmap[food] = [name]
-        elif food in hmap:
-            hmap[food].append(name)
+# def func(arr:list)->dict:
+#     hmap  = {}
 
-    return hmap
+#     for i in arr:
+#         name, food = i.split(', ')
+#         if food not in hmap:
+#             hmap[food] = set(name)
+#         elif food in hmap:
+#             hmap[food].add(name)
 
-sii = func(names_and_foods)
-print(sii)
-print(func(names_and_foods))
+#     return hmap
+
+# print(func(names_and_foods))
+
+
+
+# a  = set{1,3,2,6}
+# a.add(2)
+# a.add(8)
+# a.add(1)
+# a.add(5)
+
+# print(a)
+
+# for i in a:
+#     print(i)
+
+
+# nums = [1,8,5,7,3,11,17,12,67,91]
+
+# nums.sort(reverse=True)
+# print(nums)
+
+# def bubble_sort(arr:list)->list:
+#     sorted = False 
+
+#     while not sorted:
+#         sorted = True
+
+#         for i in range(len(arr) - 1):
+#             if arr[i] > arr[i+1]:
+
+#                 sorted = False
+#                 arr[i], arr[i+1] = arr[i + 1], arr[i]
+#     return arr
+
+# print(bubble_sort(nums))
+
+
+
+
+hashmap = {'language': 'python', 'computer': 'apple', 'gpu': 'nvidia', 'cpu': 'amd'}
+
+# for i in hashmap:
+#     print(hashmap[i])
+
+
+
+for k, v in hashmap.items():
+    print(k, v)
+
+
+
+
+for i in hashmap:
+    print(i)
+
+print("-------------------------")
+print("-------------------------")
+print("-------------------------")
+
+
+for i in hashmap:
+    if i == 'language':
+        print(hashmap[i])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
