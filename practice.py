@@ -1,4 +1,72 @@
 
+# nums = [1,2,3,4]
+# sum = 0
+# for i in nums:
+#     sum +=i
+
+# print(sum)
+
+
+# nums = [1,2,3,4,2]
+
+# def compare(arr:list)->bool:
+#     a = set(arr)
+#     return len(a) == len(arr)
+
+
+# print(compare(nums))
+
+nums = [4, 5, 1, 2, 1, 4, 5, 7] 
+
+def func(arr:list)->dict:
+    # non_repeat = None
+    prevmap = {}
+
+    for i in arr:
+        if i not in prevmap:
+            prevmap[i] = 1
+        elif i in prevmap:
+            prevmap[i] +=1
+
+
+    for i in arr:
+        if prevmap[i] == 1:
+            return i
+
+
+
+    return None
+
+print(func(nums))
+
+
+
+
+
+
+
+
+
+
+
+# def func(arr:list)->set:
+#     a = set()
+#     non_repeat = None
+
+#     for i in arr:
+#         if i not in a:
+#             a.add(i)
+#         elif i in a:
+#             a.remove(i)
+
+#     return a
+
+
+
+
+
+
+
 # arr = [1,2,4,5,6]
 
 # def func(arr:list)-> list:
