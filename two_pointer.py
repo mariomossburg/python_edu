@@ -1,17 +1,24 @@
 # -----------When you want to use two-pointers--------------
 # - **Find Triplets with Zero Sum**: Given an array, find all unique triplets that add up to zero using two pointers with the array sorted.  
+
 # - **Maximum Water Container**: Determine the maximum amount of water a container can store using heights as boundaries, moving two pointers inward to maximize the area.  
+
 # - **Subarray with Target Sum**: Find a contiguous subarray whose sum equals a target value, adjusting pointers as needed in a sliding window.  
+
 # - **Longest Substring Without Repeating Characters**: Identify the length of the longest substring in a string without duplicate characters using two pointers and a hash set.  
+
 # - **Intersection of Two Sorted Arrays**: Find the common elements in two sorted arrays using two pointers to compare elements and move forward.  
 
 
 # ---------Notes on Two-Pointer Strategy and Functions-------------
 
 # **Two-Pointer Strategy**
-# The two-pointer strategy is an efficient algorithmic approach commonly used to solve problems involving arrays or strings. 
-# It uses two indices (or pointers) to traverse the data structure, often reducing the time complexity of operations like searching or modifying arrays. 
-# The two common variations are:
+# an efficient algorithmic approach to solve problems involving arrays or strings. 
+
+# It uses two indices(pointers) to traverse the data structure, often reducing the time complexity of operations like searching or modifying arrays. 
+
+# Common variations:
+
 # 1. Same direction: Both pointers move in tandem (e.g., sliding window problems).
 # 2. Opposite direction: One pointer starts at the beginning and the other at the end (e.g., searching for a pair with a specific sum).
 
