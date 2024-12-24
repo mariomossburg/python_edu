@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # dict = {'a':1, 'b': 2, 'c':3, 'd':4}
 
 # for i in dict:
@@ -12,21 +30,21 @@
 # print(nums[2:] + nums[:2])
 
 
-nums = [1,2,3,4,4,4,5,6,7,8,8]
-prevmap = {}
-print('-----------------------------')
-for i in nums:
+# nums = [1,2,3,4,4,4,5,6,7,8,8]
+# prevmap = {}
+# print('-----------------------------')
+# for i in nums:
 
-    if i not in prevmap:
-        prevmap[i] = 1
-    elif i in prevmap:
-        prevmap[i] +=1
+#     if i not in prevmap:
+#         prevmap[i] = 1
+#     elif i in prevmap:
+#         prevmap[i] +=1
 
-print(prevmap) 
+# print(prevmap) 
 
-for i in prevmap:
-    if prevmap[i] > 1:
-        print(i)
+# for i in prevmap:
+#     if prevmap[i] > 1:
+#         print(i)
 
 
 
