@@ -1,3 +1,46 @@
+nums = [5,1,2,3,9]
+target = 8
+
+
+def func(arr, int):
+    l, r = 0, len(arr) - 1
+
+    while l < r:
+        current_sum = arr[l] + arr[r]
+        if current_sum == target:
+            return(arr[l], arr[r])
+        elif current_sum < target:
+            l +=1
+        else:
+            r -=1
+
+    return None
+
+
+print(func(nums, target))
+
+
+
+
+
+# def two_sum(arr, target):
+#     left, right = 0, len(arr) - 1
+
+#     while left < right:
+#         current_sum = nums[left] + nums[right]
+#         if current_sum == target:
+#             return( nums[left], nums[right])
+#         elif current_sum < target:
+#             left +=1
+#         else:
+#             right -=1
+
+#     return None
+
+# print(two_sum(nums, target))
+
+
+
 
 
 
