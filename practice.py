@@ -2,14 +2,15 @@ nums = [5,1,2,3,9]
 target = 8
 
 
-def func(arr, int):
-    l, r = 0, len(arr) - 1
+
+def func(arr:list, target:int)->list:
+    l,r = 0, len(arr) - 1
 
     while l < r:
-        current_sum = arr[l] + arr[r]
-        if current_sum == target:
-            return(arr[l], arr[r])
-        elif current_sum < target:
+        sum = arr[l] + arr[r]
+        if sum == target:
+            return (arr[l], arr[r])
+        elif sum < target:
             l +=1
         else:
             r -=1
@@ -18,6 +19,42 @@ def func(arr, int):
 
 
 print(func(nums, target))
+
+
+def bubsort(arr:list)-> list:
+    n = len(arr) - 1
+    sorted = False 
+
+    while not sorted:
+        sorted = True
+        for i in range(0,n):
+            if arr[i] > arr[i+1]:
+                sorted = False
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+
+    return arr
+
+print(bubsort(nums))
+
+
+
+
+# def func(arr, int):
+#     l, r = 0, len(arr) - 1
+
+#     while l < r:
+#         current_sum = arr[l] + arr[r]
+#         if current_sum == target:
+#             return(arr[l], arr[r])
+#         elif current_sum < target:
+#             l +=1
+#         else:
+#             r -=1
+
+#     return None
+
+
+# print(func(nums, target))
 
 
 
