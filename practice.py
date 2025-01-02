@@ -1,40 +1,56 @@
-nums = [5,1,2,3,9]
-target = 8
+# nums = [1,2,3,4,5,6,7]
+
+# print(nums[-3:] + nums[:-3])
 
 
 
-def func(arr:list, target:int)->list:
-    l,r = 0, len(arr) - 1
-
-    while l < r:
-        sum = arr[l] + arr[r]
-        if sum == target:
-            return (arr[l], arr[r])
-        elif sum < target:
-            l +=1
-        else:
-            r -=1
-
-    return None
 
 
-print(func(nums, target))
 
 
-def bubsort(arr:list)-> list:
-    n = len(arr) - 1
-    sorted = False 
 
-    while not sorted:
-        sorted = True
-        for i in range(0,n):
-            if arr[i] > arr[i+1]:
-                sorted = False
-                arr[i], arr[i+1] = arr[i+1], arr[i]
 
-    return arr
 
-print(bubsort(nums))
+
+
+
+# nums = [5,1,2,3,9]
+# target = 8
+
+
+
+# def func(arr:list, target:int)->list:
+#     l,r = 0, len(arr) - 1
+
+#     while l < r:
+#         sum = arr[l] + arr[r]
+#         if sum == target:
+#             return (arr[l], arr[r])
+#         elif sum < target:
+#             l +=1
+#         else:
+#             r -=1
+
+#     return None
+
+
+# print(func(nums, target))
+
+
+# def bubsort(arr:list)-> list:
+#     n = len(arr) - 1
+#     sorted = False 
+
+#     while not sorted:
+#         sorted = True
+#         for i in range(0,n):
+#             if arr[i] > arr[i+1]:
+#                 sorted = False
+#                 arr[i], arr[i+1] = arr[i+1], arr[i]
+
+#     return arr
+
+# print(bubsort(nums))
 
 
 
