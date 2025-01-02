@@ -41,3 +41,9 @@ codes = [last := ord(c) for c in x]
 print(last)
 
 
+print('--------------------------------')
+print('\n\n')
+
+nums = [1,2,3,4,5,6]
+new_list = [num for num in nums]
+print(new_list)
