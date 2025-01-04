@@ -47,3 +47,15 @@ print('\n\n')
 nums = [1,2,3,4,5,6]
 new_list = [num for num in nums]
 print(new_list)
+
+colors = ['black', 'white']
+sizes = ['s', 'm', 'l']
+# tshirts = [(color, size) for color in colors for size in sizes]
+# print(tshirts)
+
+
+print('--------------------------------')
+print('\n\n')
+# prints each item line by line
+for tsh in (f'{c} {s}' for c in colors for s in sizes):
+    print(tsh)
