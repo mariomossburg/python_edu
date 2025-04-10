@@ -22,3 +22,25 @@ a = Animal("tee", 15)
 print(a.your_age())
 print(a.your_name())
 print(a.static_method())
+
+
+
+
+
+class Toy:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+
+
+
+    def show_name(self):
+        print(self.name)
+
+
+
+
+
+y = input()
+toy = Toy(y, 5)
+toy.show_name()

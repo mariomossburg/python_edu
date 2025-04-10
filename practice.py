@@ -1,17 +1,28 @@
+# list = [1,2,3,4,5,6,7,8,9]
+
+# print(list[3:] + list[:3])
+
+
+
+# x = True
+
+# while x:
+#     print("Escriba algo bb\n")
+
+#     i = input()
+    
+#     print("te amo\n")
+
+#     if input == 'te amo mas':
+#         break
+    
+# while not x:
+#     print('true')
+
+
 # nums = [1,2,3,4,5,6,7]
 
 # print(nums[-3:] + nums[:-3])
-
-
-
-
-
-
-
-
-
-
-
 
 
 # nums = [5,1,2,3,9]
@@ -267,6 +278,7 @@
 # def func(arr:list)-> int:
 #     num1= -float('inf') # initializing to smallest possible value
 #     num2= -float('inf')
+
 
 #     for i in arr:
 #         if i > num1:
@@ -568,13 +580,13 @@
 
 
 
-names_and_foods = [
-    "Alice, Pizza",
-    "Bob, Sushi",
-    "Alice, Sushi",
-    "Charlie, Pizza",
-    "Bob, Pasta"
-]
+# names_and_foods = [
+#     "Alice, Pizza",
+#     "Bob, Sushi",
+#     "Alice, Sushi",
+#     "Charlie, Pizza",
+#     "Bob, Pasta"
+# ]
 
 
 # def func(arr:list)->dict:
@@ -628,7 +640,7 @@ names_and_foods = [
 
 
 
-hashmap = {'language': 'python', 'computer': 'apple', 'gpu': 'nvidia', 'cpu': 'amd'}
+# hashmap = {'language': 'python', 'computer': 'apple', 'gpu': 'nvidia', 'cpu': 'amd'}
 
 # for i in hashmap:
 #     print(hashmap[i])
@@ -682,9 +694,16 @@ hashmap = {'language': 'python', 'computer': 'apple', 'gpu': 'nvidia', 'cpu': 'a
 
 
 
+s = 'hello world'
+
+def reverse_string(s:str)-> str:
+    reversed_str = ""
+    for i in range(len(s) -1, -1, -1):
+        reversed_str += s[i]
+    return reversed_str
 
 
-
+print(reverse_string(s))
 
 
 

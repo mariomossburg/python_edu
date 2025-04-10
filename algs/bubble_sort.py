@@ -50,6 +50,44 @@ print(arr[:5])
 
 
 
+# def bs(arr:list)->list:
+#     index_length = len(arr) - 1
+#     sorted = False
+
+#     while not sorted:
+#         sorted = True
+
+#         for i in range(0, index_length):
+#             if arr[i] > arr[i+1]:
+#                 sorted = False
+#                 arr[i], arr[i+1] = arr[i+1], arr[i]
+
+#     return arr
+
+# print("hello")
+# print(bs(unordered))
+
+
+
+
+
+# def bubble(arr: list)-> list:
+#     index_length = len(arr) - 1
+#     sorted = False # i'm called a flag
+
+#     while not sorted:
+#         sorted = True
+
+#         for i in range(0, index_length):
+#             if arr[i] > arr[i + 1]:
+#                 sorted = False
+#                 arr[i], arr[i+1] = arr[i+1], arr[i]
+#     return arr
+
+# print((bubble(arr_unordered)))
+
+
+
 
 
 

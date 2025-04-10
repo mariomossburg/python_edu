@@ -16,6 +16,7 @@ print(divmod(20, 8))
 t = (20, 8)
 print(divmod(*t))
 
+from ast import parse
 import os 
 _, filename = os.path.split('/Users/marmossburg/Desktop/python_edu/fluent_python')
 print(filename) # prints fluent_python
@@ -49,3 +50,6 @@ nested_unpacking()
 print('----------------------------------')
 nums = [1,2,3,4,5]
 print(*nums)
+
+
+
