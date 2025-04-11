@@ -105,20 +105,47 @@
 #     return res
 
 
-def contains_most_water(height:list[int])->int:
-    res = 0
-    l, r = 0, len(height) - 1
+# def contains_most_water(height:list[int])->int:
+#     res = 0
+#     l, r = 0, len(height) - 1
 
-    while l < r:
-        area = (r-l) * min(height[l], height[r])
-        res = max(res, area)
-        if height[l] < height[r]:
-            l += 1
-        else:
-            r -= 1
+#     while l < r:
+#         area = (r-l) * min(height[l], height[r])
+#         res = max(res, area)
+#         if height[l] < height[r]:
+#             l += 1
+#         else:
+#             r -= 1
 
-    return res
+#     return res
 
 
 
-print(contains_most_water)
+# print(contains_most_water)
+
+
+# nums = [1,2,3,4,5,6,7,8,9,10]
+# def sliding_window(nums:list):
+#     l,r = 0, len(nums) - 1
+
+#     while l < r:
+#         print("l", nums[l])
+#         print("r",  nums[r])
+#         l +=1
+#         r -=1
+
+# print(sliding_window(nums))
+
+
+s = "aliens have arrived"
+
+def reverse_string(s:str)-> str:
+    reversed = ''
+    stack = list(s)
+
+    while stack:
+        reversed += stack.pop()
+    
+    return reversed
+
+print(reverse_string(s))
