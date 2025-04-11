@@ -29,22 +29,22 @@ print(count_vowels('greater than ever'))
 #             sl_num = i
 #     return sl_num
 
-nums = [3,2,7,4,11,8]
+# nums = [3,2,7,4,11,8]
 
 # print(second_largest(nums))
 
 
 
-def remove_odd(nums:list) -> list:
-    new_list = []
+# def remove_odd(nums:list) -> list:
+#     new_list = []
 
-    for i in nums:
-        if i % 2 == 0:
-            new_list.append(i)
-    return new_list
+#     for i in nums:
+#         if i % 2 == 0:
+#             new_list.append(i)
+#     return new_list
 
 
-print(remove_odd(nums))
+# print(remove_odd(nums))
 
 
 
