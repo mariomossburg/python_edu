@@ -216,7 +216,6 @@ def func(arr:list[int], target: int)->list[int]:
             l+=1
         else:
             r-=1
-
 print(func(nums, target))
 
 
