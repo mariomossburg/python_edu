@@ -165,8 +165,16 @@
 
 
 
+nums = [1,2,3,4]
+print(nums[-1])
+
+s = 'racecarb'
+
+def func(s:str)-> bool:
+    return s == s[::-1]
 
 
+print(func(s))
 
 
 

@@ -205,7 +205,7 @@
 nums = [1,2,3,4,6]
 target = 10
 
-def func(arr:list[int], target: int)->list[int]:
+def func(arr:list[int], target: int):
     l,r = 0, (len(arr) - 1)
 
     while l < r:
