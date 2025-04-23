@@ -16,3 +16,7 @@ def frequency(nums:list[int])->dict[int, int]:
 
 
 print(frequency(nums))
+
+
+
+
