@@ -78,7 +78,7 @@
 
 
 
-import sys
+# import sys
 # a = [9,7,3,6,1,2,3]
 # b = a
 # a.sort()
@@ -96,6 +96,28 @@ fruits = ['grape', 'rasberry', 'apple', 'banana']
 
 # fruits.sort() # does not preserve original 
 # print(fruits)
+
+
+
+
+# TODO: ARRAYS
+#they are not of fixed size unless enforced
 import array
+import sys
+from typing import List
 
 an_array = array.array('i', [1,2,3,4])
+# but to make a fix size
+im_fixed = array.array('i', [0] * 10000)
+# print(im_fixed)
+# print(an_array)
+a_list = [0] * 10000
+
+# more relevant for larger datasets
+print('list in bytes:', sys.getsizeof(a_list))
+print('array in bytes:', sys.getsizeof(im_fixed))
+
+# a list doesn't enforce the type, you can use type hints with
+# from typing import List
+type_hint: List[int] = []
+type_hint.append(1)
