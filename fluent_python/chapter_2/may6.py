@@ -1,13 +1,14 @@
 
+# This section covers pages 50-58
 
-
+# we can give slicing naming convention
 # skip_every_other = slice(0,None,2)
-
 # l = [10,20,30,40,50,60]
-
 # print(l[skip_every_other])  
 
-# my_list = [[]] * 3
+
+
+# my_list = [[]] * 3 # I create a lists of 3 nested lists 
 # print(my_list)
 
 # board = [['_'] * 3 for i in range(3)]
@@ -16,7 +17,8 @@
 
 # row represents each row in the board each list 
 # is represented as an index in the 2d array
-# we would need a nested for loop to retreive an index within a list of the lists
+# we would need a nested for loop to retreive an 
+# index within a list of the lists
 # for row in board:
 #     print(row)
     
@@ -48,7 +50,7 @@
 # b_list.append(4)
 # print(a_list) # 1,2,3,4
 # #instead you make a shallow copy
-# c_list = b_list[:]
+# c_list = b_list[:]   ......
 # c_list.append(5)
 # print(b_list) # prints up to 4
 # print(c_list) # prints 5
@@ -87,7 +89,7 @@
 
 
 # using built in sort
-fruits = ['grape', 'rasberry', 'apple', 'banana']
+# fruits = ['grape', 'rasberry', 'apple', 'banana']
 # print(sorted(fruits)) # maintains 
 # print(fruits)
 # print("reverse", sorted(fruits, reverse=True)) # maintains 
