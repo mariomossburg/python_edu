@@ -94,8 +94,6 @@
 # print(fruits)
 # print("reverse", sorted(fruits, reverse=True)) # maintains 
 # print("by len", sorted(fruits, key=len)) # maintains 
-
-
 # fruits.sort() # does not preserve original 
 # print(fruits)
 
