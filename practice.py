@@ -711,11 +711,27 @@ def reverse_string(s:str)-> str:
     return reversed_str
 
 
-print(reverse_string(s))
+# print(reverse_string(s))
 
 
 
+arr = [3,4,7,1,3,9]
+target = 7
 
+def two_sum(nums:list[int], target: int)-> list[int]:
+        l,r = 0, len(nums) - 1
+
+        while l < r:
+            if nums[l] + nums[r] == target:
+                return [l,r]
+            elif nums[l] + nums[r] < target:
+                l+=1
+            else:
+                r-=1
+                
+        return []
+
+print(two_sum(arr,target))
 
 
 
