@@ -30,7 +30,6 @@ country_codes = {country: code
 
 
 
-
 types = ['toyota', 'bmw', 'honda', 'ford', 'chevy']
 nums = [10,11,12,13,14]
 trucks = { name: model for name, model in zip(types, nums) } # you must pair two lists in this situation
@@ -46,6 +45,9 @@ cars = dict(zip(types, sorted(nums, reverse=True))) # just use the dict construc
 # ** means to unpack dict into keyword arguments
 d = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 e = {'z': 88, 'f': 45, 'w': 33, 'i': 44, 'p': 557}
+
+print('z' in e)
+
 
 def dump(**kwargs):
     return kwargs
