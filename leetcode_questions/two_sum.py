@@ -22,6 +22,8 @@ def twoSum(nums: List[int], target: int) -> List[int]:
             logging.debug(f" Updated hashmap state: {prevMap}")
             return [prevMap[diff], i]
         prevMap[n] = i
+        
+    return []
 
 
 twoSum([2,7,11,15], 9)

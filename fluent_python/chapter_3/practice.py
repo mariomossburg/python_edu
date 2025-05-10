@@ -19,6 +19,11 @@ def func(nums:list[int], target:int)->list[int]:
 
 print(func(nums, target))
 
+
+
+
+
+
     
     
 # def func(nums:list[int], target:int)->list[int]:
