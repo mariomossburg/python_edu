@@ -99,4 +99,12 @@ a['veg'].append('lettuce')
 print('a', a)
 print('a', a['fruit'])
 
+print(a['fruit'][0]) # specifying
+
+
+dic = {}
+dic['cars'].append('toyota')
+print(dic) # keyError... must initialize key beforehand
+# for regular dic, key must be initialized first. 
+
 

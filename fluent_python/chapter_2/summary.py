@@ -89,7 +89,7 @@ print(jam in jim) # false. a contains ints, not a list of ints
 
 # we cannot use set theory with lists. Example: all items of b exist in a. 
 # we must cast the list to a set first, and a set can make those comparisons. 
-print(set(jam).issubset(set(jam)))
+print('is subset', set(jam).issubset(set(jim)))
 jam = set()
 
 
