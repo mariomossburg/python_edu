@@ -89,22 +89,43 @@ default dictionaries
 
 # Use defaultdict(list) when you're filling a dict of lists on the fly.
 
-import collections
-a = collections.defaultdict(list)
-a['fruit'].append('apple')
-a['fruit'].append('banana')
-a['fruit'].append('blueberry')
-a['veg'].append('carrot')
-a['veg'].append('lettuce')
-print('a', a)
-print('a', a['fruit'])
 
-print(a['fruit'][0]) # specifying
+import keyword
+
+# j={}
+# a=j.get('key1',None )
+# print(a)
 
 
-dic = {}
-dic['cars'].append('toyota')
-print(dic) # keyError... must initialize key beforehand
+a = [1,2,3]
+b = a[:]
+b.append(4)
+print(a)
+
+
+c = 5
+d = c
+d+=1
+print('c', c)
+print('d', d)
+
+
+# import collections
+# a = collections.defaultdict(list)
+# a['fruit'].append('apple')
+# a['fruit'].append('banana')
+# a['fruit'].append('blueberry')
+# a['veg'].append('carrot')
+# a['veg'].append('lettuce')
+# print('a', a)
+# print('a', a['fruit'])
+
+# print(a['fruit'][0]) # specifying
+
+
+# dic = {}
+# dic['cars'].append('toyota')
+# print(dic) # keyError... must initialize key beforehand
 # for regular dic, key must be initialized first. 
 
 
