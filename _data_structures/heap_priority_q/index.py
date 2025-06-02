@@ -50,3 +50,13 @@ print(list(l3))
 #(i-1)/2
 
 
+
+
+
+# aaa = [i for i in range(500)]
+# print('aaa', aaa)
+
+# aaa.insert(250, 999)
+# print('aaa', aaa)
+
+

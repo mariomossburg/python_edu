@@ -1,7 +1,7 @@
 # List comprehension and generator expressions
 
 
-# List comprehension: a concise to create a list 
+# List comprehension: a concise way to create a list 
 # by applying an expression to elements from an iterable
 # brackets
 s = [x**2 for x in range(5)]
