@@ -7,9 +7,53 @@ from typing import Counter, List
 
 
 
-x = ["eat","tea"]
-x.append([5,3])
-print(x)
+# x = ["eat","tea"]
+# x.append([5,3])
+# print(x)
+
+
+
+# default dict? 
+# def func(x: List[str])-> List[List[str]]:
+#     groups = defaultdict(list)
+#     print('groups: ', groups)
+#     for w in x:
+#         # print("w: ", w)
+#         key = tuple(sorted(w)) # breaks down each word into a tuple -> 'ant' = ('a', 'n', 't')
+#         # print("Key: ", key)
+#         groups[key].append(w)
+#     return list(groups.values())
+#     # return list(groups.values())
+
+
+# print(func(strs))
+
+
+strs = ["eat","tea","tan","ate","nat","bat"]
+
+def func(x: List[str])-> List[List[str]]:
+    groups = defaultdict(list)
+    for w in x:
+        key = tuple(sorted(w))
+        groups[key].append(w)
+    return list(groups.values())
+    
+print(func(strs))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # print(Counter(x[0]) == Counter(x[1]))
 # print(Counter(x[0]))
@@ -34,19 +78,19 @@ print(x)
 # print(func(strs))
 
 
-strs = ["eat","tea","tan","ate","nat","bat"]
+# strs = ["eat","tea","tan","ate","nat","bat"]
 
-# default dict? 
-def func(x: List[str])-> List[List[str]]:
-    groups = defaultdict(list)
-    for w in x:
-        key = tuple(sorted(w)) # breaks down each word into a tuple -> 'ant' = ('a', 'n', 't')
-        groups[key].append(w)
-    # return list(groups.keys())
-    return list(groups.values())
+# # default dict? 
+# def func(x: List[str])-> List[List[str]]:
+#     groups = defaultdict(list)
+#     for w in x:
+#         key = tuple(sorted(w)) # breaks down each word into a tuple -> 'ant' = ('a', 'n', 't')
+#         groups[key].append(w)
+#     return list(groups.values())
+#     # return list(groups.values())
 
 
-print(func(strs))
+# print(func(strs))
 
 
 # def neetcode_version(x: List[str])->List[List[str]]:
