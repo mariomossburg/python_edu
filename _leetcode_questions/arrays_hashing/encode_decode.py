@@ -6,16 +6,13 @@ includes start, excludes end
 """
 #delimeter with character count of string followed by #
 
-strs = ["sun", "is", "good", "for", "you"]
-
-
+strs = ["sunshine", "is", "good", "for", "you"]
 
 def encode(x: List[str])-> str:
     res = ''
     for s in x:
-        res +=str(len(s)) + "#" + s
+        res = str(len(s)) + "#" + s
     return res
-
 
 def decode(s: str)-> List[str]:
     res, i = [], 0
@@ -59,9 +56,6 @@ print(encode(strs))
 print("------------decoded-----------------")
 print(decode(encode(strs)))
 print("-" * 36)
-
-
-
 
 
 
