@@ -1,6 +1,6 @@
 print("-----leetcode: Longest consecutive-----")
 
-from typing import List
+from typing import Counter, List
 
 from numpy import sort
 from sympy import Permanent
@@ -21,7 +21,8 @@ def longconsec(nums:List[int])-> int:
 
 print(longconsec(nums))
 
-
+# new_nums = Counter(nums)
+# print(new_nums)
 
 # list.sort() -- in place and Permanent
 # sorted(list) not in place, not permanent

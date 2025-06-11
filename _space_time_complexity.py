@@ -157,3 +157,22 @@ for key Python built-in and standard-library data structures.
 # 3. Compare against naive or alternative approach's complexity to justify choice.
 # 4. Default to built-ins before custom implementations.
 # End of 80/20 notes
+
+
+
+
+
+
+# | Operation                         | dict          | set  | list                                | tuple           | array (from array module)           | linked list (LL)              |
+# | --------------------------------- | ------------- | ---- | ----------------------------------- | --------------- | ----------------------------------- | ----------------------------- |
+# | **Lookup (by key/index/element)** | O(1) (by key) | O(1) | O(1) (by index), O(n) (by value)    | O(1) (by index) | O(1) (by index)                     | O(n) (by value/index)         |
+# | **Insertion**                     | O(1)          | O(1) | O(1) (append), O(n) (insert middle) | N/A (immutable) | O(1) (append), O(n) (insert middle) | O(1) (at head), O(n) (middle) |
+# | **Deletion**                      | O(1)          | O(1) | O(n) (by value/index)               | N/A (immutable) | O(n) (remove)                       | O(1) (at head), O(n) (middle) |
+# | **Space Complexity**              | O(n)          | O(n) | O(n)                                | O(n)            | O(n)                                | O(n)                          |
+# | **Iteration**                     | O(n)          | O(n) | O(n)                                | O(n)            | O(n)                                | O(n)                          |
+
+# ---dict/set--: Hash tables, fast lookup/insertion/deletion by key or element.
+# ---list------: Dynamic arrays, fast index access, slow insert/delete except at end.
+# ---tuple-----: Immutable lists, fast index access, no insert/delete.
+# ---array-----: Like list but fixed type, more memory efficient.
+# ---linked L--: Nodes with pointers, slow random access, fast insert/delete if node known.
