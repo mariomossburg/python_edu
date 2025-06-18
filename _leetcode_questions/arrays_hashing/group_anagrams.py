@@ -37,6 +37,7 @@ def func(x: List[str])-> List[List[str]]:
         key = tuple(sorted(w))
         groups[key].append(w)
     return list(groups.values())
+        
     
 print(func(strs))
 

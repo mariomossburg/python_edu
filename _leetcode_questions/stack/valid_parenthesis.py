@@ -19,3 +19,37 @@ def func(s:str)-> bool:
         else: 
             stack.append(c)
     return True if not stack else False
+
+
+m = "{[1]}"
+# print(func(m))
+
+
+
+
+# ana = "ana"
+# x = 5
+# y = 3.77
+
+# s = input()
+
+# def talk(s: str):
+#     # s = input()
+#     greet = "Hello, my name is " + s
+#     return greet
+    
+# print(talk(s))
+
+
+
+
+
+
+
+# nombre = ["ana", "cardozo"]
+# print(nombre[-1])
+
+# def 
+
+
+
