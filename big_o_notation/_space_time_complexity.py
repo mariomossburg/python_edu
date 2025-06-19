@@ -5,6 +5,7 @@ for key Python built-in and standard-library data structures.
 """
 
 # 1. list (dynamic array)
+
 # --------------------------------------------------
 # Underlying: contiguous block of memory, resizable.
 # Operations:
