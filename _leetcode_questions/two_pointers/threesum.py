@@ -52,7 +52,6 @@ def threesum(nums: List[int])-> List[List[int]]:
 print("threesum best case")
 print(threesum(nums))
                     
-    
 
 
 
