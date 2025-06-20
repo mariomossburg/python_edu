@@ -26,7 +26,7 @@ Sets are radar scanners — fast membership checks.
 # convert list to set for deduplication -> O(n)
 
 """
-Deques are revolving doors — fast both ends.
+Deques are revolving doors — fast at both ends.
 """
 # Queues / Stacks using collections.deque
 # append() / pop()        -> O(1) ✅ use as stack
@@ -59,3 +59,8 @@ Brute force is trying every key in a giant keyring.
 """
 # Brute Force
 # O(2^n), O(n!) ❌ exponential time — use only for small n (e.g. backtracking)
+
+"""
+Stacks: FILO — like a stack of plates
+Queues: FIFO — like a line at the bank
+"""
