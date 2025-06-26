@@ -22,8 +22,8 @@ class Solution:
             
 
 
-class Solution_two:
-    def iter(self, head: ListNode)-> ListNode:
+# class Solution_two:
+#     def iter(self, head: ListNode)-> ListNode:
         
 
 
