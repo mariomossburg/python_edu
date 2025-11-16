@@ -806,9 +806,33 @@ def func(nums: List[int], target: int)-> List[int]:
         else:
             r-=1
     return []
-print(func(nums, target))
+# print(func(nums, target))
 
 
 
 
 hashMap ={}
+
+
+
+
+
+print('-' * 30)
+
+def toothpick(x:int, y:int)->int:
+    
+    sum = x * y
+    return sum
+
+
+print(toothpick(5,10))
+
+
+someList = [1,1,3,4,5,6,7,8,9]
+
+
+
+def hasdup(x: List[int])->bool:
+    return len(x) == len(set(x))
+
+print(hasdup(someList))
