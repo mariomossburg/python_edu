@@ -13,16 +13,16 @@ import numpy as np
 # fast parsing(wheather simulation), Sensor/device data (e.g., from solar inverters, smart meters)
 # learn more what this is, means, and how to implement
 
-# octets = array('B', range(6))
-# m1 = memoryview(octets)
-# print(m1.tolist())
-# m2 = m1.cast('B', [2,3])
-# print(m2.tolist())
-# m3 = m1.cast('B', [3,2])
-# print(m3.tolist())
-# m2[1,1] = 22
-# m3[1,1] = 33
-# print(octets)
+octets = array('B', range(6))
+m1 = memoryview(octets)
+print(m1.tolist())
+m2 = m1.cast('B', [2,3])
+print(m2.tolist())
+m3 = m1.cast('B', [3,2])
+print(m3.tolist())
+m2[1,1] = 22
+m3[1,1] = 33
+print(octets)
 
 
 # a = np.arange(12)

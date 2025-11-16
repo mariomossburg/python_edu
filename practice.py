@@ -165,16 +165,16 @@
 
 
 
-nums = [1,2,3,4]
-print(nums[-1])
+# nums = [1,2,3,4]
+# print(nums[-1])
 
-s = 'racecarb'
+# s = 'racecarb'
 
-def func(s:str)-> bool:
-    return s == s[::-1]
+# def func(s:str)-> bool:
+#     return s == s[::-1]
 
 
-print(func(s))
+# print(func(s))
 
 
 
@@ -702,40 +702,43 @@ print(func(s))
 
 
 
-s = 'hello world'
+# s = 'hello world'
 
-def reverse_string(s:str)-> str:
-    reversed_str = ""
-    for i in range(len(s) -1, -1, -1):
-        reversed_str += s[i]
-    return reversed_str
+# def reverse_string(s:str)-> str:
+#     reversed_str = ""
+#     for i in range(len(s) -1, -1, -1):
+#         reversed_str += s[i]
+#     return reversed_str
 
 
 # print(reverse_string(s))
 
 
 
-arr = [3,4,7,1,3,9]
-target = 7
+# arr = [3,4,7,1,3,9]
+# target = 7
 
-def two_sum(nums:list[int], target: int)-> list[int]:
-        l,r = 0, len(nums) - 1
+# def two_sum(nums:list[int], target: int)-> list[int]:
+#         l,r = 0, len(nums) - 1
 
-        while l < r:
-            if nums[l] + nums[r] == target:
-                return [l,r]
-            elif nums[l] + nums[r] < target:
-                l+=1
-            else:
-                r-=1
+#         while l < r:
+#             if nums[l] + nums[r] == target:
+#                 return [l,r]
+#             elif nums[l] + nums[r] < target:
+#                 l+=1
+#             else:
+#                 r-=1
                 
-        return []
+#         return []
 
-print(two_sum(arr,target))
-
-
+# print(two_sum(arr,target))
 
 
 
+def remove_duplicates(nums:list[int])-> str:
+    return set(nums) == nums
 
 
+nums = [1,2,2,3,6,5]
+
+print(remove_duplicates(nums))

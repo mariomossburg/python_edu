@@ -742,18 +742,73 @@
 # car = [1,4,2,3]
 
 # print(*(i for i in car))
+from typing import List
+nums = [2,5,7,9,11,15]
+target = 14
 
-
-tp = [1,2,3,4,5,6,7,8,9]
-
-print(tp)
-
-def func():
-    l,r = 0, len(tp) - 1
+def func(nums: List[int], target: int)-> List:
+    l,r = 0, len(nums) - 1
+    
     while l < r:
-        print("l", l)
-        print("r", r)
-        l += 1
-        r -= 1
+        if nums[l] + nums[r] == target:
+            return [l,r]
+        elif nums[l] + nums[r] < target:
+            l+=1
+        else:
+            r-=1
+    return []
+
+print(func(nums, target))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# nums = [1,2,3,4,5,6,7,8,9]
+
+
+# print(nums)
+
+# def func():
+#     l,r = 0, len(nums) - 1
+#     while l < r:
+#         print("l", l)
+#         print("r", r)
+#         l += 1
+#         r -= 1
         
-print(func())
+# print(func())
+
+
+
+from typing import List
+nums = [3,7,4,9,11,16]
+target = 14
+
+
+def func(nums: List[int], target: int)-> List[int]:
+    l,r = 0, len(nums) - 1
+    
+    while l< r:
+        if nums[l] + nums[r] == target:
+            return [l,r]
+        elif nums[l] + nums[r] < target:
+            l+=1
+        else:
+            r-=1
+    return []
+print(func(nums, target))
+
+
+
+
+hashMap ={}
